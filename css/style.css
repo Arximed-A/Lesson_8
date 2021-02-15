@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Comic+Neue:700&display=swap");
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	color: #000;
+	background: grey;
+}
+/*  */
+header {
+	font-family: Arial;
+	font-size: 40px;
+	max-width: 90%;
+}
+.hover__1{
+	height: 200px;
+	text-align: center;
+	margin: 20px 0px 0px 20px;
+	background-color: red;
+	vertical-align: middle;
+}
+.hover {
+	padding: 60px;
+	color: white;
+	display: inline-block;
+}
+.hover:hover {
+visibility: hidden;
+}
+.hover__1:hover {
+font-size: 0;
+}
+.active {
+	color: white;
+display: inline-block;
+	margin: 20px;
+}
+.active:active {
+	background: red;
+}
+.visited {
+display: inline-block;
+	color: white;
+	margin: 20px;
+}
+.visited:visited {
+	color: tomato;
+}
+a:focus {
+	outline: 10px dotted black;
+}
+.focus {
+	color: white;
+	margin: 20px;
+}
+.open {
+	color: purple;
+	margin: 20px;
+	display: inline-block;
+}
+.target {
+	color: white;
+	margin: 20px;
+	background-color: green;
+	padding: 20px;
+	display: none;
+}
+.target:target {
+	display: block;
+}
+.close {
+	margin: 0px 0px 0px 300px;
+	text-decoration: underline;
+}
+.close:target {
+	display: none;
+}
+.children {
+	font-size: 30px;
+	color: darkslateblue;
+}
+.children p {
+	margin: 20px 30px 0px 20px;
+}
+.children * {
+	background: rgba(41, 158, 86, 0.452);
+}
+.child {
+	margin: 20px 0px 0px 20px;
+	display: inline-block;
+}
+.children *:first-child {
+	color: darkred;
+}
+.children span:first-of-type {
+	color: darkslategray;
+}
+.children *:last-child {
+	color: darkorange;
+}
+.children span:last-of-type {
+	color: darkolivegreen;
+}
+.children p:nth-child(3) {
+	background: darksalmon;
+}
+.children *::first-line {
+	text-decoration: underline;
+	font-family: "Comic Neue";
+	font-weight: 700;
+}
+.children *::first-letter {
+	font-size: 50px;
+	/* text-decoration: none; Не отменяет? даже если прописан*/
+	color: white;
+	padding: 0px 0px 0px 50px;
+}
+.footer {
+	margin: 100px 0px 0px 0px;
+	font-size: 35px;
+	font-family: arial;
+}
+.beforeandafter {
+	color: yellowgreen;
+}
+.p {
+	margin: 20px 0px 20px 20px;
+}
+.p::before {
+	content: "";
+	background: url("../img/check_icon.png") 0 0 no-repeat;
+	width: 30px;
+	height: 19px;
+	display: inline-block;
+}
+.p::after {
+	content: "";
+	background: url("../img/Push.png") right bottom/auto 100% no-repeat;
+	width: 30px;
+	height: 35px;
+	display: inline-block;
+}
+
